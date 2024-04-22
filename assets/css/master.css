@@ -5,17 +5,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
-    height: 100%; /* Ensures that the body takes full viewport height */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    background: #fefefe; /* Just a nice background color, change as you like */
-}
-
 body {
   font-family: "Lato", sans-serif;
+  background: #fefefe; /* Just a nice background color, change as you like */
 }
 
 body.day {
@@ -26,4 +18,53 @@ body.day {
 body.night {
   background-color: #101011; /* Dark background for night */
   color: #fefefe;
+}
+
+.brand {
+  font-family: 'Galano Grotesque Alt DEMO';
+}
+
+.logo {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  text-indent: -9999px;
+  margin: auto;
+  transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Corrected transition */
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+body.day .logo {
+  background: url(../images/logo-dark.png) no-repeat center center;
+  background-size: cover;
+
+}
+
+body.night .logo {
+  background: url(../images/logo-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+body {
+    transition: background 0.5s, color 0.5s;
 }
