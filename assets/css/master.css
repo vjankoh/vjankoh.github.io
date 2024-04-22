@@ -1,0 +1,29 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust:100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%; /* Ensures that the body takes full viewport height */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background: #fefefe; /* Just a nice background color, change as you like */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body.day {
+  background-color: #fefefe; /* Light background for day */
+  color: #101011;
+}
+
+body.night {
+  background-color: #101011; /* Dark background for night */
+  color: #fefefe;
+}
