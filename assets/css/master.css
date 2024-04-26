@@ -7,7 +7,6 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background: #fefefe; /* Just a nice background color, change as you like */
 }
 
 body.day {
@@ -22,6 +21,10 @@ body.night {
 
 .brand {
   font-family: 'Galano Grotesque Alt DEMO';
+}
+
+.product {
+  margin-top: -16px;
 }
 
 .logo {

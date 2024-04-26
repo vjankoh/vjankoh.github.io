@@ -3,6 +3,7 @@ function updateTheme() {
     const hour = now.getHours();
     const minute = now.getMinutes();
     const bodyClass = document.body.classList;
+    const sectionClass = document.getElementById('landingSection').classList;
 
     // Define transition times
     const dayStartHour = 5;
@@ -18,11 +19,15 @@ function updateTheme() {
         if (!bodyClass.contains('day')) {
             bodyClass.add('day');
             bodyClass.remove('night');
+            sectionClass.add('day');
+            sectionClass.remove('night');
         }
     } else {
         if (!bodyClass.contains('night')) {
             bodyClass.add('night');
             bodyClass.remove('day');
+            sectionClass.add('night');
+            sectionClass.remove('day');
         }
     }
 }

@@ -1,11 +1,27 @@
 html, body {
-    height: 100%; /* Ensures that the body takes full viewport height */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+  height: 100%; /* Ensures that the body takes full viewport height */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
 }
 
 .logo-container {
   margin-top: -64px;
+  z-index: 1;
+}
+
+#landingSection {
+  opacity: 45%;
+}
+
+#videoBackground {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;        /* Covers the full width */
+    height: 70%;       /* Adjust height automatically */
+    min-height: 100%;   /* Minimum height to cover the viewport */
+    z-index: -100;      /* Keeps the video in the background */
+    object-fit: cover;  /* Ensure the video covers the area */
 }
