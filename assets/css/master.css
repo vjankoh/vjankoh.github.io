@@ -23,6 +23,10 @@ body.night {
   font-family: 'Galano Grotesque Alt DEMO';
 }
 
+.product {
+  margin-top: -8px;
+}
+
 @media (min-width: 768px) {
   .product {
     margin-top: -16px;
